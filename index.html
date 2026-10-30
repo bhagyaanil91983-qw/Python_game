@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Lab — Learn, Code, Build</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=JetBrains+Mono:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Python Lab <span>Learn, Code, Build</span></div>
+    <label class="topic-pick">Topic
+      <select id="topic-select"></select>
+    </label>
+    <div class="xp" title="Experience points">
+      <div class="xp-text"><b id="level">Level 1</b> <span id="xp-num">0 XP</span></div>
+      <div class="bar"><i id="xp-bar"></i></div>
+    </div>
+  </header>
+
+  <div id="py-status" class="py-status" role="status">Loading Python… the first load can take 10–20 seconds.</div>
+
+  <div class="layout">
+    <nav id="nav" aria-label="Lesson stages"></nav>
+    <main id="stage"></main>
+  </div>
+
+  <footer class="foot">
+    Your progress is saved in this browser only (localStorage). It does not sync to other devices or browsers.
+    <button class="link" id="reset-progress">Reset all progress</button>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+  <script src="lessons.js"></script>
+  <script src="progress.js"></script>
+  <script src="python-runner.js"></script>
+  <script src="challenge-engine.js"></script>
+  <script src="lesson-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
